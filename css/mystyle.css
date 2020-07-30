@@ -1,0 +1,102 @@
+.wrapper{
+ background-color: none;
+ height: 1000px;
+ background-position: auto;
+ width: auto;
+ position: center;
+ border: none;
+ display: inline-block;
+ padding: 20px;
+ }
+    
+h2{
+  font-family: Calibri;
+  color:white;
+  text-align: center inline height;
+  text-decoration: none;
+  background-color: #1c2833;
+  padding: 10px;
+  margin-top: 0px;
+   }
+
+table{
+  font-family: Calibri; 
+  color:black; 
+  font-size: 12pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:left; 
+  background-color: none; 
+  border-collapse: none; 
+  width: auto;
+    }
+
+ button {
+  border: solid 2px black;
+  color: white;
+  background-color: #34495e;
+  text-align: left;
+  text-decoration: none;
+    
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  color: red;
+} 
+
+.box_left{
+  
+  background-color:#909497;
+  width: auto;
+  height:500px;
+  border: solid 2px;
+  border-color: white;
+  margin: auto;
+  float: left;
+  display: inline-block;
+  }
+    
+.box_mid{
+   
+  background-color:  #909497;
+  width:auto;
+  height:500px;
+  border: solid 2px;
+  border-color: white;
+  display: inline-block;
+  margin: auto;
+  float: left;
+ 
+}
+    
+.box_right{
+   
+  background-color:  #909497;
+  width: auto;
+  height:500px;
+  border: solid 1px;
+  border-color: white;
+  margin: auto;
+  float: left;
+  display: inline-block;
+  
+}
+
+.sky-image {
+ background-image: url("../img/sky-image.jpg");
+ background-color: auto;
+ height: 1000px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+.receipt_table {
+background-color: white;
+border: solid 1px black;
+margin: 10px;
+color:black;
+}

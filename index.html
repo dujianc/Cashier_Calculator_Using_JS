@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+
+<script src="cashier.js"></script>
+
+<title>Cash Calculator</title>
+
+</head>
+
+<body onload="myDisplayDateTime()">
+
+<div class="sky-image"> 
+
+<center>
+<div class="wrapper">
+<p style="text-align: center; color: black; font-size: 25px;"><strong>This is a cash calculator</strong></p>
+    
+<div class="box_left">
+
+<h2>Admin</h2>
+
+<form>
+<table align="center" cellpadding = "10">
+ 
+<tr>
+<td>Add a new product</td>
+</tr>
+<tr>
+<td></td>
+<td><input id="productName" style="border:solid 2px black" type="text" name="product name" placeholder="product name"/></td>
+<td> <button type="button" onclick="addingItem()">Add Product</button> </td>
+</tr>
+ 
+<tr>
+<td colspan="2" align="left">Select a product then add the price per unit</td>
+</tr>
+
+<tr>
+<td>
+<select id="firstSelect" style="border:solid 2px black" name="product">
+
+</select>
+</td>
+<td><input id="price" style="border:solid 2px black" type="text" name="price" placeholder="price" /></td>
+<td> <button id="addPrice" type="button" onclick="addPriceOfProduct()">Add Price</button></td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+<div class="box_mid">
+
+<h2>Checkout</h2>
+    
+<form>
+<table align="center" cellpadding = "10">
+<tr>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+</tr>
+<tr>
+<td></td>
+<td> <button onclick="resetTable()" type="button">New Transaction</button> </td>
+
+<td></td>
+</tr>
+ 
+<tr>
+<td colspan="2" align="left">Select a product then type the number of units</td>
+</tr>
+
+<tr>
+<td>
+<select id="secondSelect" style="border:solid 2px black" name="unit price" id="unit price">
+
+</select>
+</td>
+<td> <button onclick="addToCart()" type="button">Add to Cart</button> </td>
+<td><button onclick="amtDue()" type="button">Amount due</button></td>
+</tr>
+
+<tr>
+<td></td>
+
+<td>
+<tr>
+	<table>
+	<td><button onclick="addUnitsToProduct1()" type="button">1</button></td>
+	<td><button onclick="addUnitsToProduct2()" type="button">2</button></td>
+	<td><button onclick="addUnitsToProduct3()" type="button">3</button></td>
+    </table>
+</tr>
+
+<tr>
+	<table>
+	<td><button onclick="addUnitsToProduct4()" type="button">4</button></td>
+	<td><button onclick="addUnitsToProduct5()" type="button">5</button></td>
+	<td><button onclick="addUnitsToProduct6()" type="button">6</button></td>
+    </table>
+</tr>
+
+<tr>
+	<table>
+	<td><button onclick="addUnitsToProduct7()" type="button">7</button></td>
+	<td><button onclick="addUnitsToProduct8()" type="button">8</button></td>
+	<td><button onclick="addUnitsToProduct9()" type="button">9</button></td>
+    </table>
+</tr>
+
+<tr>
+	<table>
+	<td><button onclick="addUnitsToProduct0()" type="button">0</button></td>
+	</table>
+</tr>
+
+</td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+</form>
+
+
+</div>
+
+<div class="box_right">
+
+<h2>Receipt</h2>
+
+
+<table id="thisTable" class="receipt_table" border="1" align="center" cellpadding = "10">
+ 
+<tr>
+<td  colspan="4" align="left">
+
+<input id="dateAndtime" style="border:none; color: red;" type="text" name="dateTime" placeholder=""/>	
+
+</td>
+</tr>
+ 
+<tr>
+<td>Product</td>
+<td>$/unit</td>
+<td>Unit(s)</td>
+<td>Price</td>
+</tr>
+
+
+<tr class="noBorder">
+<td colspan="4" id="totalPrice">Total Price:</td>
+</tr>
+<tr class="noBorder">
+<td colspan="4" id="totalTax">Taxes:</td>
+</tr>
+<tr class="noBorder">
+<td colspan="4" id="totalAmt">Amount Due:</td>
+</tr>
+
+</table>
+
+
+</div>
+</div>
+
+ <br>
+ <br>
+
+</center>
+
+</div>
+</body>
+</html>
