@@ -1,0 +1,20 @@
+{
+  "name": "Cashier_Calculator_Using_JS",
+  "version": "1.0.0",
+  "description": "My JS Projects",
+  "main": "cashier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dujianc/Cashier_Calculator_Using_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dujianc/Cashier_Calculator_Using_JS/issues"
+  },
+  "homepage": "https://github.com/dujianc/Cashier_Calculator_Using_JS#readme"
+}
